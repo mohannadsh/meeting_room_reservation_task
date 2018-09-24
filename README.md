@@ -23,5 +23,16 @@ For Mobile, use the same design theme but make it usable on the mobile device
 
 ## APIs
 - Get Meeting Rooms API: http://demo3825547.mockable.io/meeting_rooms/
+
+Sample Response:
+```
+[
+    {"title": "Queenbee", "id": 1},
+    {"title": "Huddle", "id": 2},
+    {"title": "Berberries", "id": 3},
+    {"title": "Kena", "id": 4},
+]
+```
+
 - Create A Reservation API:
 - Get Meeting Room Reservation:
