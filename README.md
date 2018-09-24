@@ -22,7 +22,7 @@ For Mobile, use the same design theme but make it usable on the mobile device
 
 
 ## APIs
-- Get Meeting Rooms API: http://demo3825547.mockable.io/meeting_rooms/
+- Get Meeting Rooms API: [GET] http://demo3825547.mockable.io/meeting_rooms/
 
 Sample Response:
 ```
@@ -34,5 +34,19 @@ Sample Response:
 ]
 ```
 
-- Create A Reservation API:
-- Get Meeting Room Reservation:
+- Create A Reservation API: [POST] http://demo3825547.mockable.io/create_reservation/
+
+Sample Response:
+```
+{
+ "res_id": 400,
+ "from_time": "2018-09-30 10:00"
+ "to_time": "2018-09-30 12:00",
+ "by": "Mohannad",
+ "title": "Finance Meeting"
+}
+```
+
+Please note that this API returns the same reservation instance each time, you might need to mock the server response in order to fit your needs.
+
+- Get Meeting Room Reservation: [GET]
