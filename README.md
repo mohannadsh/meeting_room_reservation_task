@@ -16,7 +16,7 @@ The main goal of the system is to show you the reservations of the current meeti
 ## UI
 Please use the following as the design for the system
 
-[ui]: https://ibb.co/hrefU9
+[ui]: https://ibb.co/hrefU9 ""
 
 For Mobile, use the same design theme but make it usable on the mobile device
 
