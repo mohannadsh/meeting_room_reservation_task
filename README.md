@@ -49,4 +49,52 @@ Sample Response:
 
 Please note that this API returns the same reservation instance each time, you might need to mock the server response in order to fit your needs.
 
-- Get Meeting Room Reservation: [GET]
+- Get Meeting Room Reservation: [GET] http://demo3825547.mockable.io/get_meeting_rooms_reservations/
+
+Sample Response:
+
+```
+[
+    {"room_id": 1, "reservations":[
+        {
+         "res_id": 400,
+         "from_time": "2018-09-27 10:00"
+         "to_time": "2018-09-30 12:00",
+         "by": "Mohannad",
+         "title": "Finance Meeting"
+        },
+        {
+         "res_id": 401,
+         "from_time": "2018-09-28 10:00"
+         "to_time": "2018-09-30 11:00",
+         "by": "Mohannad",
+         "title": "Finance Meeting 2"
+        },
+        {
+         "res_id": 402,
+         "from_time": "2018-09-30 10:00"
+         "to_time": "2018-09-30 11:00",
+         "by": "Yaser",
+         "title": "Retrospective"
+        },
+        {
+         "res_id": 403,
+         "from_time": "2018-09-30 13:00"
+         "to_time": "2018-09-30 14:30",
+         "by": "Wajid",
+         "title": "FE Training Meeting"
+        },
+        ]
+    },
+    {"room_id": 4, "reservations":[
+        {
+         "res_id": 404,
+         "from_time": "2018-09-27 10:00"
+         "to_time": "2018-09-30 12:00",
+         "by": "Mohannad",
+         "title": "Finance Meeting"
+        }
+        ]
+    }
+]
+```
