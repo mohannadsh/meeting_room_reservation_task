@@ -12,5 +12,14 @@ The main goal of the system is to show you the reservations of the current meeti
   - Reserve a meeting room in the available time slot, and reject the reservation if the room is not available.
   - Suggest empty time slots for the user.
   - The UI should be responsive (using Bootstrap4)
-  
-  
+
+## UI
+Please use the following as the design for the system
+
+[ui]: https://ibb.co/hrefU9
+
+For Mobile, use the same design theme but make it usable on the mobile device
+
+
+## APIs
+
