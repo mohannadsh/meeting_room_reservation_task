@@ -1,0 +1,8 @@
+<div class="rooms">
+  <div *ngFor="let room of allRooms" id="room_{{room.id}}" (click)='show(room.id)'>
+    <img src="/assets/imgs/meeting-room.png" width="50px" height="50px">
+    <p>{{room.title}}</p>
+
+  </div>
+  <a href="">Suggest time and Room ?</a>
+</div>

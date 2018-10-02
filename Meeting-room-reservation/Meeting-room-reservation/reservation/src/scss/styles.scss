@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "./vars";
+
+
+
+body{
+    background-color: #29a3a3 !important;
+    height: 75%;
+    box-shadow: grey
+}
+
+.rooms , .calender , .meetings {
+    height: 100%;
+    margin: 0%;
+}
+
