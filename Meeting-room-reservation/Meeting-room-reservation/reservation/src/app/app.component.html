@@ -1,0 +1,6 @@
+<div class="row">
+    <app-rooms class=" col-md-2" (onSelectRoom)="showEvents($event)"></app-rooms>
+    <app-calender class="col-md-6" (onSelectDate)="myFun($event)"></app-calender>
+    <app-meetings class="col-md-4" [day]="selected_day" [room]="selected_room" [year] = "selected_year"
+    [month] = "month"  [day_num] = "day_num"></app-meetings>
+</div>

@@ -1,0 +1,47 @@
+<div class="meetings">
+  <div class="title">
+    <span class="today">{{day}}</span>
+    <span class="fa fa-plus-circle add" aria-hidden="true" (click)='add()'></span>
+  </div>
+  <div *ngIf = "flag">
+    <label>from-time</label>
+    <input type="text" #f_time>
+    <label>to-time</label>
+    <input type="text" #t_time>
+    <button (click) = 'reserve(f_time,t_time)'>Reserve</button>
+  </div>
+
+  <ng-container *ngFor="let reserve of allReservs">
+    <div *ngIf="reserve.room_id == room" class="shownReservations row">
+      <div class="col-sm-8">
+        <ng-container *ngFor="let item of reserve.reservations">
+          <ng-container *ngIf="get_From_Time(item.from_time)">
+            <ng-container *ngIf="result[1] == day_num && result[2] == month && result[3] == year">
+              <div class="{{className}}">
+                <h6>{{item.title}}</h6>
+                <span>{{result[0]}} - </span>
+                <span>{{get_To_Time(item.to_time)}}</span>
+              </div>
+            </ng-container>
+
+          </ng-container>
+        </ng-container>
+      </div>
+
+      <div class="col-sm-4">
+        <ul>
+          <li>9:00</li>
+          <li>10:00</li>
+          <li>11:00</li>
+          <li>12:00</li>
+          <li>13:00</li>
+          <li>14:00</li>
+          <li>15:00</li>
+          <li>16:00</li>
+          <li>17:00</li>
+          <li>18:00</li>
+        </ul>
+      </div>
+    </div>
+  </ng-container>
+</div>

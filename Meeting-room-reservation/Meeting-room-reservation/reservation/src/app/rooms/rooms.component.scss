@@ -1,0 +1,23 @@
+@import "../../../src/scss/vars";
+
+.rooms{
+    background-color: $purple;
+    color: white;
+}
+
+.rooms> div {
+    text-align: center;
+    padding: 10%;
+    
+    border-bottom: 3px solid $purple;
+    background-color : $purple;
+}
+
+a{
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    padding: 2%;
+    font-size: 1.2rem;
+    
+}
